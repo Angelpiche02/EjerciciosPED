@@ -1,4 +1,8 @@
 //Crear una funcion que calcule el area de un circulo solicitando datos al usuario
+// round trabaja con double y roundf trabaja con float
+// si quiero redondear a un decimal tengo que multiplicar el area por 10 y y a eso dividirle 10.0, asi obtenemos solo un decimal
+// tambien puedo usar #include <iomanip> para setprecision(1) ese 1 es para poner la cantidad de decimales    
+
 
 #include <iostream>
 #include <cmath>
@@ -25,5 +29,5 @@ int main(){
 //Definicion
 
 float AreaDelCirculo(float radio){
-    return roundf((radio * radio) * kPi);       //Investigar roundf
+    return roundf((radio * radio) * kPi);       //Investigar roundf 
 }
