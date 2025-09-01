@@ -20,7 +20,7 @@ struct InformacionAlbum{
     int FechaDeLanzamiento;
     std::vector <std::pair <std::string, int >> vector_canciones;
    
-
+    
 }; 
 
 std::vector <struct InformacionAlbum> Album;    //aqui se guardara mi struct
