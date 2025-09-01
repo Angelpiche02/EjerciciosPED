@@ -1,0 +1,75 @@
+// Solicitar datos de la info del album y cantante
+// imprimir en pantalla todos los datos almacenados del album y cantante
+
+#include <iostream>
+#include <vector>
+#include <utility>
+
+struct InformacionCantante
+{
+
+    std::string NombreCantante;
+    std::string Nacionalidad;
+
+    struct InformacionAlbum InfAlbum;
+};
+
+struct InformacionAlbum
+{
+
+    std::string NombreDeAlbum;
+    int AntiguedadDeAlbum;
+    int AnoDeLanzamiento;
+    std::vector<std::pair<std::string, int>> titulo_numero;
+};
+
+std::vector<struct InformacionAlbum> vectorAlbum; // aqui se guardara mi struct
+
+// Funciones
+struct InformacionAlbum SolicitarDatos(); // Se hace una funcion struct pq se solicitaran varios datos
+void Imprimir(std::vector<struct InformacionAlbum> vectorAlbum);
+
+int main()
+{
+
+    struct InformacionAlbum datos;
+
+    datos = SolicitarDatos();
+
+    // Guardamos todo el struct en el vector
+    vectorAlbum.push_back(datos);
+
+    return 0;
+}
+
+struct InformacionAlbum SolicitarDatos()
+{
+
+    struct InformacionCantante datos;
+
+    std::cout << "Que album desea agregar?\n";
+    std::cin >> datos.InfAlbum.NombreDeAlbum;
+
+    std::cout << "Año de lanzamiento: \n";
+    std::cin >> datos.InfAlbum.AnoDeLanzamiento;
+
+    std::cout << "Nombre del cantante: \n";
+    std::cin >> datos.NombreCantante;
+
+    std::cout << "Nacionalidad del cantante: \n";
+    std::cin >> datos.Nacionalidad;
+
+    for (auto canciones : )     //usado para recorrer lo que ya tenemos
+    
+
+        return datos;
+}
+
+void Imprimir(std::vector<struct InformacionAlbum> vectorAlbum)
+{
+
+    for (auto cancion : datos.vectorCanciones)
+    {
+
+    }
+}
