@@ -29,12 +29,14 @@ struct InformacionCupon
 // vector global de tipo struct
 std::vector<struct InformacionCupon> vector_cupones; // y esto es un vector que va guardar un struct
 
-struct InformacionCupon SolicitarDatosGenerales();
 
+//FUNCIONES
+struct InformacionCupon SolicitarDatosGenerales();
 std::string GeneradorCupones(std::string letras);
 std::string SolicitarDatos();
 std::string AsignarPremio(std::string identificador_cupon);
 void Imprimir(std::vector<struct InformacionCupon> vector_cupones);
+
 
 int main()
 {
