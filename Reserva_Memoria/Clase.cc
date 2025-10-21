@@ -1,9 +1,8 @@
 // Hay 3 tipos de memoria
 // Memoria estatica, aqui hay variables globales constantes
-// Heap busca donde puede entrar un objeto que pese memoria
-/*Stack es como una pila, donde los valores se van colocando uno tras otro y esta se libera cuando la funcion termina, Y SON VARIABLES LOCALES
- */
-
+// Heap busca donde puede entrar un objeto que pese memoria, Es memoria que se gestiona manualmente (dinámica)
+//Stack es como una pila, donde los valores se van colocando uno tras otro y esta se libera cuando la funcion termina, Y SON VARIABLES LOCALES
+ 
 // El almacenamiento libre no es una funcion inagotablke de memoria
 
 //malloc() y free() son funciones desarrolladas en c, malloc permite asignar memoria 
